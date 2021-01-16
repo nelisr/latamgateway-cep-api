@@ -17,7 +17,7 @@ module Cep
 
           validate(response)
         else
-          raise "Cep digitado não é um cep válido"
+          raise "Cep digitado fora do padrão"
         end
       rescue Exception => e
         raise e
