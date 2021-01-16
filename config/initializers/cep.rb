@@ -17,7 +17,7 @@ module Cep
 
           validate(response)
         else
-          raise t 'messages.errors.cep_sem_padrao'
+          raise I18n.t 'messages.errors.cep_sem_padrao'
         end
       rescue Exception => e
         raise e
@@ -35,7 +35,7 @@ module Cep
           Endereco.create(response)
         end
       else
-        raise t "messages.errors.cep_nao_encontrado"
+        raise I18n.t "messages.errors.cep_nao_encontrado"
       end
     end
   end
