@@ -12,6 +12,7 @@ module Auth
     private
     def decode(token)
       begin
+        puts
         JWT.decode token, Rails.application.credentials.dig(:jwt, :secret_key), true,{ algorithm: 'HS256' }
       rescue JWT::DecodeError => e
         raise e
