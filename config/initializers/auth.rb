@@ -5,7 +5,7 @@ module Auth
     def verify(token)
       user = decode(token).at(0)
       unless user['name'].eql?("Latam Gateway") && user['email'].eql?("dev@latamgateway.com") # simula a validação de existencia de usuário no banco
-        raise "Usuário sem autorização para acessar esse recurso"
+        raise t 'messages.errors.sem_autorizacao'
       end
     end
 

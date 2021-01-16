@@ -5,6 +5,6 @@ FactoryBot.define do
     cidade { Faker::Address.city }
     uf { Faker::Address.state }
     endereco_completo { "MyString" }
-    cep { Faker::Address.zip_code }
+    cep { Faker::Address.zip }
   end
 end

@@ -62,6 +62,25 @@ Response:
     "updated_at": "2021-01-15T11:11:28.650-03:00"
 }
 ```
- 
+8. Caso queira acessar a aplicação em produção (Heroku): 
+````
+Endpoint: https://latamgateway-cep-api.herokuapp.com/enderecos/search
+Method: POST
+Body: {"cep": "60511005"}
+Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwibmFtZSI6IkxhdGFtIEdhdGV3YXkiLCJlbWFpbCI6ImRldkBsYXRhbWdhdGV3YXkuY29tIiwiaWF0IjoyNTE2MjM5MDIyfQ.NdqVoKGFFRnjEs5kwbtjVk2KGWMGzX_H4d9YBbqs_1g
+Response: 
+{
+    "id": 1,
+    "cep": "60511005",
+    "uf": "CE",
+    "cidade": "Fortaleza",
+    "bairro": "Pici",
+    "logradouro": "Rua Tibúrcio Albano",
+    "endereco_completo": "Rua Tibúrcio Albano - Pici - Fortaleza/CE - 60511005",
+    "created_at": "2021-01-15T11:11:28.650-03:00",
+    "updated_at": "2021-01-15T11:11:28.650-03:00"
+}
+``` 
+
 ### Versão 
 - 1.0.0

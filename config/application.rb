@@ -41,5 +41,8 @@ module LatamgatewayCepApi
 
     # ler as libs customizada na pasta 'lib'
     # config.autoload_paths << Rails.root.join('lib')
+
+    # set key to langague of application
+    config.i18n.default_locale = "pt-BR"
   end
 end

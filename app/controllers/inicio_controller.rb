@@ -3,6 +3,6 @@ class InicioController < ApplicationController
 
   # GET /
   def index
-    render json: { message: "Bem Vindo a API REST de consulta de CEP" }, status: 200
+    render json: { status: 200,  message: I18n.t("messages.errors.sem_autorizacao") }, status: 200
   end
 end

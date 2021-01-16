@@ -17,7 +17,7 @@ module Cep
 
           validate(response)
         else
-          raise "Cep digitado fora do padrão"
+          raise t 'messages.errors.cep_sem_padrao'
         end
       rescue Exception => e
         raise e
@@ -35,7 +35,7 @@ module Cep
           Endereco.create(response)
         end
       else
-        raise "Cep inválido ou não existe."
+        raise t "messages.errors.cep_nao_encontrado"
       end
     end
   end

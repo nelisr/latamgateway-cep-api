@@ -13,7 +13,7 @@ class ApplicationController < ActionController::API
         render json: { status: 401, error: 'Unauthorized', message: e.message }, status: :unauthorized
       end
     else
-      render json: { status: 401, error: 'Unauthorized', message: "Sem autorização para acessar esse recurso" }, status: :unauthorized
+      render json: { status: 401, error: 'Unauthorized', message: I18n.t("messages.errors.sem_autorizacao") }, status: :unauthorized
     end
   end
 end
