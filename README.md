@@ -11,7 +11,7 @@ Esse é uma projeto que possui serviços REST para consulta de CEP.
 3. Instalar as dependências do projeto.
 ```
 bundle ou bundle install
-```
+``` 
 4. Adicionar as credenciais do banco de dados no arquivo config/database.yml.
 ```
 default: &default
