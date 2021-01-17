@@ -63,7 +63,7 @@ Response:
 }
 ```
 8. Caso queira acessar a aplicação em produção (Heroku): 
-````
+```
 Endpoint: https://latamgateway-cep-api.herokuapp.com/enderecos/search
 Method: POST
 Body: {"cep": "60511005"}
@@ -81,6 +81,5 @@ Response:
     "updated_at": "2021-01-15T11:11:28.650-03:00"
 }
 ``` 
-
 ### Versão 
 - 1.0.0
