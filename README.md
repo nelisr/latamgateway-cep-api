@@ -39,7 +39,7 @@ production:
 ```
 rails db:create db:migrate RAILS_ENV=production
 ```
-6. Agora iremos 'startar' o projeto com o comando abaixo
+6. Agora iremos 'startar' o projeto com o comando abaixo:
 ```
 rails server -b 0.0.0.0 -p 3000 -e production
 ```
